@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Number Guessing Game</h1>
+    <br>
+    <div>
+        <h2>I Am A Number Between 1 And 100. Guess Which Number I Am. You Have 15 Guesses</h2>
+        <br>
+        <label>Number Of Guesses Left:</label>
+        <br>
+        <h3 id="nuofgu"></h3>
+        <label>Enter Your Guess Here:</label>
+        <br>
+        <input type="number" id="guesser" style="width: 400px;">
+        <br>
+        <br>
+        <button onclick="guess()" style="background-color:chartreuse;">Enter Guess</button>
+        <br>
+        <br>
+        <button onclick="replay()" style="background-color:chartreuse;">Play Again</button>
+        <br>
+        <br>
+        <h1 id="end"></h1>
+        <br>
+        <h1 id="ans" style="color: red;"></h1>
+    </div>
+    <script src="primary.js"></script>
+</body>
+
+</html>
