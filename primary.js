@@ -11,13 +11,12 @@ function guess() {
     document.getElementById("nuofgu").innerHTML = nog;
     if (nog == 0) {
         document.getElementById("end").style = "color: red;";
-        document.getElementById("end").innerHTML = "Oops! You're Out Of Guesses!";
-        document.getElementById("ans").innerHTML = "The Correct Answer Was " + r;
+        document.getElementById("end").innerHTML = "Oops! You're Out Of Guesses! The Correct Answer Was "+r+"!";
     };
 
     if (guess01 == r) {
         document.getElementById("end").style = "color: green;";
-        document.getElementById("end").innerHTML = "Wow "+naem+"! You Guessed It Right! You Win!";
+        document.getElementById("end").innerHTML = "Wow "+naem+"! You Guessed It Right! The Correct Answer Was "+r+"! You Win!";
     };
 
     if (guess01 != r) {
@@ -43,7 +42,6 @@ function replay(){
     r = "";
     r = Math.floor(Math.random() * 100 + 1);
     document.getElementById("end").innerHTML = "";
-    document.getElementById("ans").innerHTML = "";
     nog = 0;
     nog = 15;
     document.getElementById("nuofgu").innerHTML = nog;
